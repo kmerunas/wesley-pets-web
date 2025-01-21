@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Wancho", serif;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  font-style: normal;
+}
+
+main {
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 230vh;
+  background-color: #ffe8ba;
+  h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    li a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+hr {
+  border: none;
+  border-top: 1px solid black;
+  color: black;
+  width: 100%;
+  margin-top: 2rem;
+}
+footer {
+  background-color: #ffe8ba;
+  padding-top: 3rem;
+}
+.burger-btn {
+  all: unset;
+  display: none;
+  cursor: pointer;
+  img {
+    width: 2rem;
+  }
+}
+.page-wrapper {
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.cart {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  img {
+    width: 1.5rem;
+  }
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 2rem;
+  img {
+    width: 100%;
+    border-radius: 50px;
+  }
+}
+.second-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rem;
+  padding-top: 4rem;
+  h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.7px;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6rem;
+  gap: 1rem;
+  a {
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}
+.third-section {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  gap: 8rem;
+}
+.first-square-img {
+  img {
+    width: 100%;
+  }
+}
+.second-square-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  img {
+    width: 100%;
+
+    padding-right: 2rem;
+  }
+}
+.products {
+  /* height: 80vh; */
+  background-color: #e7d7f8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  img {
+    width: 100%;
+  }
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.product-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.shop-btn {
+  all: unset;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.shop-btn:hover {
+  background-color: black;
+  color: #e7d7f8;
+}
+.histories {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  background: url(./img/brush-background.png);
+  background-size: cover;
+  padding: 8rem 15rem;
+  gap: 3rem;
+  img {
+    width: 350px;
+  }
+}
+.histories-logo {
+  font-size: 3.6rem;
+}
+.histories-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  h1 {
+    font-size: 3.6rem;
+  }
+  a {
+    color: black;
+  }
+}
+.footer-img-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.footer-img {
+  width: 100%;
+  border-radius: 40px;
+}
+.footer-bottom-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem 2rem;
+  /* ul li {
+    list-style: none;
+    a {
+      color: black;
+    }
+  } */
+}
+.bottom-section-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  h4 {
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  img {
+    width: 1.5rem;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    li {
+      list-style: none;
+    }
+  }
+}
+.bottom-section-2 {
+  display: flex;
+  align-items: center;
+  ul li {
+    list-style: none;
+    a {
+      color: black;
+    }
+  }
+}
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  input {
+    outline: none;
+    padding: 1.5rem 1.5rem;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid rgb(219, 219, 219);
+  }
+}
+input:focus {
+  border: 1px solid black;
+  outline: none;
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sign-up-btn {
+  all: unset;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100px;
+  text-align: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.sign-up-btn:hover {
+  background-color: black;
+  color: #ffe8ba;
+}
+@media screen and (max-width: 768px) {
+  .burger-btn {
+    display: inline-block;
+  }
+  header {
+    nav {
+      display: none;
+    }
+  }
+  main {
+    padding: 3rem 3rem;
+    height: 245vh;
+    h1 {
+      font-size: 3.6rem;
+      text-align: center;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+  .first-section {
+    gap: 6rem;
+  }
+
+  .second-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 4rem;
+    h2 {
+      font-size: 2.7rem;
+      padding-right: 10rem;
+    }
+  }
+  .about {
+    padding: 0rem 0rem;
+  }
+  .third-section {
+    align-items: center;
+    grid-template-columns: 1fr;
+    padding-top: 10rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    gap: 1rem;
+  }
+  .first-square-img {
+    img {
+      width: 70%;
+      height: 350px;
+      object-fit: cover;
+    }
+  }
+  .second-square-img {
+    /* padding-left: 20rem; */
+    img {
+      width: 70%;
+      height: 500px;
+    }
+  }
+  .products {
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 2rem;
+  }
+  .product-3 {
+    display: none;
+  }
+  .histories {
+    padding: 0rem 0rem;
+    img {
+      width: 250px;
+    }
+  }
+  .histories-logo {
+    font-size: 2.7rem;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .histories-about {
+    padding-bottom: 5rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+  .footer-img-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-img {
+    height: 180px;
+    object-fit: cover;
+  }
+  .footer-bottom-section {
+    grid-template-columns: 1fr;
+    padding-right: 10rem;
+  }
+  .bottom-section-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  .sign-up-form {
+    padding-top: 1.5rem;
+  }
+  .sign-up {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
