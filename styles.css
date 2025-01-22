@@ -21,6 +21,7 @@ main {
     text-align: center;
   }
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -35,6 +36,7 @@ header {
     }
   }
 }
+
 hr {
   border: none;
   border-top: 1px solid black;
@@ -42,10 +44,12 @@ hr {
   width: 100%;
   margin-top: 2rem;
 }
+
 footer {
   background-color: #ffe8ba;
   padding-top: 3rem;
 }
+
 .burger-btn {
   all: unset;
   display: none;
@@ -54,13 +58,13 @@ footer {
     width: 2rem;
   }
 }
-.page-wrapper {
-}
+
 .logo {
   font-size: 1.4rem;
   font-weight: 400;
   cursor: pointer;
 }
+
 .cart {
   all: unset;
   cursor: pointer;
@@ -72,7 +76,7 @@ footer {
   }
 }
 
-.first-section {
+.title-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +87,8 @@ footer {
     border-radius: 50px;
   }
 }
-.second-section {
+
+.welcome-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15rem;
@@ -99,6 +104,7 @@ footer {
     letter-spacing: 0.7px;
   }
 }
+
 .about {
   display: flex;
   flex-direction: column;
@@ -110,7 +116,8 @@ footer {
     cursor: pointer;
   }
 }
-.third-section {
+
+.introduce-section {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
@@ -119,27 +126,42 @@ footer {
   padding-right: 10rem;
   gap: 8rem;
 }
-.first-square-img {
+
+.first-square {
   img {
     width: 100%;
   }
 }
+
 .second-square-img {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: end;
+
   a {
     text-decoration: none;
     color: black;
   }
   img {
-    width: 100%;
-
-    padding-right: 2rem;
+    object-fit: cover;
+    width: 320px;
+    height: 420px;
   }
 }
+
+.price-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-square-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .products {
-  /* height: 80vh; */
   background-color: #e7d7f8;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -152,6 +174,7 @@ footer {
     width: 100%;
   }
 }
+
 .product {
   display: flex;
   flex-direction: column;
@@ -160,6 +183,7 @@ footer {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 .product-3 {
   display: flex;
   flex-direction: column;
@@ -168,19 +192,23 @@ footer {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 .shop-btn {
   all: unset;
   border: 2px solid black;
   border-radius: 10px;
   padding: 0.5rem 1rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: 0.4s;
 }
+
 .shop-btn:hover {
   background-color: black;
   color: #e7d7f8;
 }
-.histories {
+
+.reviews {
   display: flex;
   flex-direction: column;
 
@@ -194,10 +222,12 @@ footer {
     width: 350px;
   }
 }
-.histories-logo {
+
+.reviews-logo {
   font-size: 3.6rem;
 }
-.histories-about {
+
+.reviews-about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,6 +238,36 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+.circle-button {
+  all: unset;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.circle-button img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.circle-button:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.circle-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .footer-title {
   display: flex;
   flex-direction: column;
@@ -221,6 +281,7 @@ footer {
     color: black;
   }
 }
+
 .footer-img-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -229,15 +290,18 @@ footer {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 .footer-img {
   width: 100%;
   border-radius: 40px;
 }
+
 .footer-bottom-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 3rem 2rem;
 }
+
 .bottom-section-1 {
   display: flex;
   flex-direction: column;
@@ -258,6 +322,7 @@ footer {
     }
   }
 }
+
 .bottom-section-2 {
   display: flex;
   align-items: center;
@@ -268,6 +333,7 @@ footer {
     }
   }
 }
+
 .sign-up-form {
   display: flex;
   flex-direction: column;
@@ -280,30 +346,40 @@ footer {
     border: 1px solid rgb(219, 219, 219);
   }
 }
+
 input:focus {
   border: 1px solid black;
   outline: none;
 }
+
 .sign-up {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 .sign-up-btn {
   all: unset;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1.3rem 1.5rem;
   width: 100px;
   text-align: center;
   font-size: 1.3rem;
   cursor: pointer;
   transition: 0.4s;
 }
+
 .sign-up-btn:hover {
   background-color: black;
   color: #ffe8ba;
 }
+
+.decoration {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 @media screen and (max-width: 768px) {
   .burger-btn {
     display: inline-block;
@@ -315,7 +391,6 @@ input:focus {
   }
   main {
     padding: 3rem 3rem;
-    height: 245vh;
     h1 {
       font-size: 3.6rem;
       text-align: center;
@@ -323,23 +398,28 @@ input:focus {
       padding-right: 5rem;
     }
   }
-  .first-section {
+  .title-section {
     gap: 6rem;
+    img {
+      object-fit: cover;
+      width: 671px;
+      height: 230px;
+    }
   }
 
-  .second-section {
+  .welcome-section {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding-top: 4rem;
     h2 {
       font-size: 2.7rem;
-      padding-right: 10rem;
+      padding-right: 5rem;
     }
   }
   .about {
     padding: 0rem 0rem;
   }
-  .third-section {
+  .introduce-section {
     align-items: center;
     grid-template-columns: 1fr;
     padding-top: 10rem;
@@ -347,7 +427,7 @@ input:focus {
     padding-right: 0rem;
     gap: 1rem;
   }
-  .first-square-img {
+  .first-square {
     img {
       width: 70%;
       height: 350px;
@@ -356,8 +436,9 @@ input:focus {
   }
   .second-square-img {
     img {
-      width: 70%;
+      width: 380px;
       height: 500px;
+      align-items: end;
     }
   }
   .products {
@@ -367,22 +448,24 @@ input:focus {
   .product-3 {
     display: none;
   }
-  .histories {
+  .reviews {
     padding: 0rem 0rem;
     img {
       width: 250px;
     }
   }
-  .histories-logo {
+  .reviews-logo {
     font-size: 2.7rem;
     padding-top: 5rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .histories-about {
-    padding-bottom: 5rem;
-    padding-left: 11rem;
-    padding-right: 11rem;
+  .reviews-about {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+  .circle-buttons {
+    padding-bottom: 4rem;
   }
   .footer-img-row {
     grid-template-columns: 1fr 1fr;
@@ -394,6 +477,7 @@ input:focus {
   .footer-bottom-section {
     grid-template-columns: 1fr;
     padding-right: 10rem;
+    padding-bottom: 15rem;
   }
   .bottom-section-1 {
     display: flex;
