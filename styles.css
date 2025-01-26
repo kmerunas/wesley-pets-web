@@ -1,3 +1,7 @@
+:root {
+  --font-color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +15,8 @@
 main {
   padding-top: 1rem;
   padding-bottom: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.7rem;
+  padding-right: 2.7rem;
   width: 100%;
   background-color: #ffe8ba;
   h1 {
@@ -30,9 +34,10 @@ header {
     display: flex;
     gap: 2rem;
     list-style: none;
+
     li a {
       text-decoration: none;
-      color: black;
+      color: var(--font-color);
     }
   }
 }
@@ -40,7 +45,7 @@ header {
 hr {
   border: none;
   border-top: 1px solid black;
-  color: black;
+  color: var(--font-color);
   width: 100%;
   margin-top: 2rem;
 }
@@ -86,6 +91,10 @@ footer {
     width: 100%;
     border-radius: 50px;
   }
+  h1 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
 }
 
 .welcome-section {
@@ -111,7 +120,7 @@ footer {
   padding-left: 6rem;
   gap: 1rem;
   a {
-    color: black;
+    color: var(--font-color);
     font-weight: 400;
     cursor: pointer;
   }
@@ -139,7 +148,7 @@ footer {
 
   a {
     text-decoration: none;
-    color: black;
+    color: var(--font-color);
   }
   img {
     object-fit: cover;
@@ -168,8 +177,8 @@ footer {
   gap: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.7rem;
+  padding-right: 2.7rem;
   img {
     width: 100%;
   }
@@ -197,7 +206,7 @@ footer {
   all: unset;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   font-size: 1.3rem;
   cursor: pointer;
   transition: 0.4s;
@@ -278,17 +287,17 @@ footer {
     font-size: 3.6rem;
   }
   a {
-    color: black;
+    color: var(--font-color);
   }
 }
 
 .footer-img-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 0.7rem;
   padding-top: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.7rem;
+  padding-right: 2.7rem;
 }
 
 .footer-img {
@@ -299,7 +308,7 @@ footer {
 .footer-bottom-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 3rem 2rem;
+  padding: 3rem 2.7rem;
 }
 
 .bottom-section-1 {
@@ -329,7 +338,7 @@ footer {
   ul li {
     list-style: none;
     a {
-      color: black;
+      color: var(--font-color);
     }
   }
 }
@@ -354,14 +363,14 @@ input:focus {
 
 .sign-up {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  /* flex-direction: column; */
+  gap: 0.5rem;
 }
 
 .sign-up-btn {
   all: unset;
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 1.3rem 1.5rem;
   width: 100px;
   text-align: center;
@@ -404,6 +413,10 @@ input:focus {
       object-fit: cover;
       width: 671px;
       height: 230px;
+    }
+    h1 {
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
   }
 
@@ -489,8 +502,8 @@ input:focus {
   .sign-up-form {
     padding-top: 1.5rem;
   }
-  .sign-up {
-    flex-direction: row;
-    gap: 0.5rem;
-  }
+  /* .sign-up {
+    flex-direction: column;
+    gap: 2rem;
+  } */
 }
